@@ -331,7 +331,10 @@ if __name__ == "__main__":
             project_names = get_project_names_from_tasks(sg, tasks)
             project_ids = list(project_names.keys())
             project_sequences = get_sequences_from_projects(sg, project_ids)
-            all_sequences = [seq for sequences in project_sequences.values() for seq in sequences]
+            all_sequences = []
+            for sequences in project_sequences.values():
+                for seq in sequences:
+                    all_sequences.append(seq)
             seq_shot_codes = get_shot_codes_for_sequences(all_sequences)
             shot_steps = get_shots_and_steps_from_tasks(tasks)
             project_asset_types = get_asset_types_from_projects(sg, project_ids)
