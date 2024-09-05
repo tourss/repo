@@ -36,8 +36,8 @@ class MonitorDaemon:
                 print(f"스크립트 실행 중에 오류가 발생했습니다: {e}", file=log_file)
 
 if __name__ == "__main__":
-    monitor_script = "/home/rapa/yummy/pipeline/scripts/loader/loader_script/status_monitor.py"
-    log_file = "/home/rapa/yummy/pipeline/scripts/loader/monitor_log.txt"
+    monitor_script = "/home/rapa/sub_server/pipeline/scripts/loader/loader_script/status_monitor.py"
+    log_file = "/home/rapa/sub_server/pipeline/scripts/loader/monitor_log.txt"
     daemon = MonitorDaemon(monitor_script, log_file)
     daemon.start_monitoring()
     
