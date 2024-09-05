@@ -7,7 +7,7 @@ SCRIPT_NAME = "test_hyo"
 API_KEY = "ljbgffxqg@cejveci5dQebhdx"
 
 """
-로그인 하는 유저에게 할당된 프로젝트와 태스크에 따라 필요한 폴더만 생성하도록 만든 스크립트
+로그인 하는 유저에게 할당된 프로젝트와 태스크에 따라 필요한 폴더만 생성하도록 만든 스크립트입니다.
 """
 
 base_path = "/home/rapa/test" #폴더구조를 생성할 경로
